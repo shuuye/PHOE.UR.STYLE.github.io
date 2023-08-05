@@ -1,0 +1,207 @@
+:root{
+    --bgcolor: white;
+    --maincolor: black;
+    --textcolor: #5b5c5c;
+    --spcolor: #9EECFF;
+}
+
+@font-face {
+    font-family: Worksans;
+    src: url("/Work_Sans/WorkSans-VariableFont_wght.ttf") format('truetype');
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+main{
+    min-height: 550px;
+}
+
+*{
+    font-family: Worksans;
+    color: var(--textcolor);
+}
+
+/*------------------------------------header------------------------------------------ */
+
+header{
+    height: 65px;
+    position: relative;
+    border-bottom: var(--spcolor) solid 5px;
+}
+
+#signin-icon{
+    width: 2%;
+    height: 60%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 7%;
+    min-height: 26px;
+    min-width: 26px;
+}
+
+#booking-icon{
+    width: 2%;
+    height: 60%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 2.5%;
+    min-height: 26px;
+    min-width: 26px;
+}
+
+#search-icon{
+    width: 2%;
+    height: 60%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 2.5%;
+    min-height: 26px;
+    min-width: 26px;
+}
+
+#title {
+    display: flex;
+    flex-wrap: wrap;
+    top: 3px;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.top{
+    display: inline-block;
+    width: 4%;
+    z-index: 4;
+    opacity: 60%;
+}
+
+.top:hover{
+    cursor: pointer;
+}
+
+h1{
+    font-weight: 350;
+    font-size: 3em;
+    
+}
+
+h1 a{
+    text-decoration: none;
+    
+}
+
+/*------------------------------------header end------------------------------------------ */
+
+/*------------------------------------footer bar------------------------------------------ */
+footer {
+    text-align: center;
+    padding-right: 0.5%;
+    padding-left: 1%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background-color: var(--bgcolor);
+    border-top: var(--spcolor) 10px solid;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: var(--bgcolor);
+    text-align: left;
+}
+
+.footer-content{
+    float: left;
+    width: 15%;
+    list-style: none;
+}
+
+.footer-content h2{
+    text-align: left;
+    font-weight: 350;
+    font-size: 16px;
+    color: var(--maincolor);
+}
+
+.footer-content a{
+    float: left;
+    font-weight: 250;
+    font-size: 16px;
+    color: var(--textcolor);
+    text-decoration: none;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+
+.footer-content ul{
+    list-style-type: none;
+    float: left;
+}
+
+.footer-content a:hover{
+    text-decoration: underline var(--spcolor) 2px;
+    font-weight: 300;
+}
+
+.footer-contact{
+    float: right;
+    width: 40%;
+    color: var(--maincolor);
+}
+
+.footer-contact h2{
+    float: left;
+    padding-bottom: 10px;
+    font-weight: 350;
+    font-size: 16px;
+}
+
+.contact-icon{
+    width: 17%;
+    min-width: 3rem;
+    max-width: 3rem;
+    cursor: pointer;
+    float: left;
+    padding-left: 10px;
+}
+
+.copyright{
+    padding-top: 30px;
+    clear: both;
+}
+/*------------------------------------footer end------------------------------------------ */
+
+/*------------------------------------navigation bar------------------------------------------ */
+nav {
+    text-align: center;
+    background-color: var(--bgcolor);
+    border-radius: 3px;
+
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+button {
+    background-color: inherit;
+    border: none;
+    padding: 14px 16px;
+}
+
+button a:hover{
+    text-decoration: underline var(--spcolor) 2px;
+    font-weight: 500;
+}
+
+
+
+/*------------------------------------navigation bar end------------------------------------------ */
