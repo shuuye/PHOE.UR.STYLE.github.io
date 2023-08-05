@@ -1,0 +1,82 @@
+#content {
+    margin-top: 5%;
+    border: none;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.title {
+    font-style: italic;
+    margin-left: 20%;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: #9EECFF;
+}
+
+#service {
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 2%;
+}
+
+label #customize, #booking, #consult {
+    font-family: Worksans;
+    text-align: center;
+}
+
+#box {
+    width: 50%;
+    height: 50%;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+}
+
+#box img {
+    width: 100%;
+    height: 300px;
+}
+
+#category {
+
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+#selectbutton {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    height: 20%;
+    margin-left: 10%;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    width: 8%;
+    height: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+#selectbutton:hover, .button:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#back {
+    margin-left: 10%;
+    text-align: center;
+}

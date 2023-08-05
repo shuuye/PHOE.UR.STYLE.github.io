@@ -1,0 +1,96 @@
+/*for video*/
+
+.textt{
+width: 40%;
+float: left;
+display: block;
+margin-left: 20px;
+text-align: center;
+float: left;
+animation: fadeInUp 1s ease-in-out;
+}
+
+.textt h4 {
+  font-size: 1.5rem;
+  letter-spacing: 3;
+  margin: 1%;
+  padding: 1%;
+}
+
+.textt p {
+  padding: 1%;
+}
+
+.vd1{
+  width: 50%;
+  float: left;
+}
+video{
+    display: block;
+    border-bottom-left-radius:45%;
+    border-top-right-radius: 45%;
+    width: 100%;
+}
+
+.custom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+
+  .customword {
+    animation: fadeInUp 1s ease-in-out;
+    font-size: large;
+    padding: 2%;
+    text-align: center;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+.custom1 {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+.cusimg {
+flex-basis: 33.33%;
+padding: 10px;
+box-sizing: border-box;
+text-align: center;
+}
+
+.cusimg img {
+display: block;
+margin: auto;
+max-width: 100%;
+height: auto;
+}
+
+.cusimg h5 {
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+.cusimg p {
+margin-bottom: 20px;
+}
+
+.appoin{
+text-align: center;
+font-size: medium;
+padding: 0.5%;
+}
+

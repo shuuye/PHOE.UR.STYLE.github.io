@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Payment | PHOE.UR.STYLE</title>
+    <link rel="icon" type="pictures/Favicon" href="Pictures/faviconlogo.jpg" defer>
+    <link rel="stylesheet" type="text/css" href="layout/pc_reset.css" defer>
+
+    <link rel="stylesheet" type="text/css" href="layout/main.css" defer>
+    <link rel="stylesheet" type="text/css" href="payment.css" defer>
+</head>
+
+<style>
+    @font-face {
+        font-family: Worksans;
+        src: url("Work_Sans/WorkSans-VariableFont_wght.ttf") format('truetype');
+    }
+
+
+    * {
+        font-family: Worksans;
+    }
+</style>
+
+<body>
+
+    <header id="#top">
+        <a href="book.html"> <img src="iconfolder\booking-icon.svg" alt="booking-icon" id="booking-icon"></a>
+        <div id="title">
+            <h1><a href="index.html">PHOE.UR.STYLE</a></h1>
+        </div>
+        <a href="login.html"><img src="iconfolder\signin.svg" alt="signin-icon" id="signin-icon"></a>
+
+    </header>
+
+
+    <nav>
+        <button><a href="index.html">Home</a></button>&nbsp;
+        <button><a href="product.html">Product</a></button>&nbsp;
+
+        <button><a href="location.html">Store Locator</a></button>&nbsp;
+        <button><a href="faq.html">FAQs </a></button>&nbsp;
+        <button><a href="about.html">About Us </a></button>&nbsp;
+    </nav>
+
+    <main>
+        <div class="shipping-section">
+            <div class="payment-box-title"> </div>
+            <div id="receipt-title" class="payment-box-title">
+                <div style="float: left; font-size: 30px;">INVOICE </div>
+                <div style="float: right; font-size: 20px;"> PHOE.UR.STYLE <br /><br /></div>
+                <div
+                    style="font-size: 15px; font-weight: 300; line-height: 1.2; border-bottom: black solid 1px; clear: both;">
+                    Company Address : Lot 2.17.00 &
+                    3.19.00, Level 2 and 3, 168, Jln Bukit Bintang, <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Bukit Bintang, 55100 Kuala Lumpur, Federal Territory of Kuala Lumpur <br />
+                    Contact Number &nbsp;&nbsp;: +1800889118<br /><br />
+
+                    <div id="receipt-display">
+                        <div class="payment-box">
+                            <!--<div class="payment-cart-box"> 
+                            <img src="${productImg}" alt="" class="cart-img">
+                            <div class="detail-box">
+                                <div class="cart-product-title">${title}</div>
+                                <div class="cart-price">${price}</div>                        
+                                
+                                <input type="number" value="${value}" class="cart-quantity">
+                            </div>
+                        -->
+                        </div>
+
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price">RM 0</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <form action="index.html" method="get" id="deliveryinfo" name="deliveryinfo">
+                <div class="formtitle">SHIPPING DETAILS</div>
+                <div class="form-division">
+                    <p id="formtitle" style="font-weight: 600; text-decoration: underline ;">Fill in your shipping
+                        details:
+                    </p>
+                    <p id="receipt-title" style="font-weight: 600; text-decoration: underline ;">Delivery Details </p>
+                    <br />
+
+                    <div class="forminput">
+                        <label for="date">Order Date: </label>
+                        <input type="text" name="date" id="date" size="10" class=numbers disabled />
+                    </div>
+                    <br /><br class="hidefrom"><br class="hidefrom"><br class="hidefrom"><br>
+                    <div class="line"></div>
+
+                    <div class="forminput">
+                        <label for="name" style="clear: both;">Name: </label>
+                        <input type="text" name="name" id="name">
+                        <span id="RName" class="required hidefrom"></span>
+                    </div>
+                    <br class="hidefrom"><br class="hidefrom"><br class="hidefrom">
+
+                    <div class="forminput receipt-display">
+                        <label for="contact_number">Contact Number: </label>
+                        <input type="text" id="contact_number" name="contact_number" maxlength="11"
+                            pattern="^01[1-9]-\d{7,8}$" oninput="formatAndValidateContactNumber()"
+                            placeholder="e.g., 01X-XXXXXXX">
+                        <span id="RContact" class="required hidefrom"></span>
+                    </div>
+
+
+                    <br /><br><br><br><br>
+                    <div class="line"></div>
+
+                    <div class="forminput  receipt-display">
+                        <label for="address_line">Address Line 1:</label>
+                        <input type="text" id="address_line" name="address_line" >
+                        <span id="RAddress" class="required hidefrom"></span>
+                    </div>
+                    <br>
+
+                    <div class="forminput">
+                        <label for="address_line_2">Address Line 2:</label>
+                        <input type="text" id="address_line_2" name="address_line_2">
+                    </div>
+                    <br>
+
+                    <div class="forminput">
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" pattern="[A-Za-z ]{1,50}">
+                        <span id="RCity" class="required hidefrom"></span>
+                    </div>
+                    <br>
+
+                    <div class="forminput">
+                        <label for="state">State:</label>
+                        <input type="text" id="state" name="state" pattern="[A-Za-z ]{1,50}">
+                        <span id="RState" class="required hidefrom"></span>
+                    </div>
+                    <br />
+
+                    <div class="forminput">
+                        <label for="postal_code">Postal Code:</label>
+                        <input type="text" id="postal_code" name="postal_code" pattern="\d{5,10}"
+                            placeholder="e.g., 12345">
+                        <span id="RPostal" class="required hidefrom"></span>
+                    </div>
+
+                    <br /><br><br><br><br>
+                    <div class="line"></div>
+
+
+                    <div class="forminput hidefrom">
+                        <div class="forminput">
+                            <label for="paymentmethod" id="formtitle">Payment Method: </label>
+                            <select name="paymentmethod" class="paymentmethod" onchange="changepayment()">
+                                <option value="default" selected disabled>Choose payment -</option>
+                                <option value="creditcard">Credit / Debit Card</option>
+                                <option value="online">Online Banking</option>
+                            </select>
+                            <span id="RMethod" class="required hidefrom"></span>
+                        </div>
+                        <br>
+
+                        <div class="forminput creditcard hide">
+
+                            <div class="forminput">
+                                <label for="card_number">Card Number:</label>
+                                <input type="text" id="card_number" name="card_number" maxlength="19" pattern="^\d{4} \d{4} \d{4} \d{4}$"
+                                    oninput="formatCardNumber()" placeholder="XXXX XXXX XXXX XXXX">
+                                <span id="RCard" class="required hidefrom"></span>
+                            </div>
+                            <br>
+
+                            <div class="forminput">
+                                <label for="expiry_date">Expiry Date:</label>
+                                <input type="text" id="expiry_date" name="expiry_date" maxlength="7"
+                                    pattern="(0[1-9]|1[0-2])\/(20\d{2}|2\d{3})" placeholder="e.g., 01/2022">
+                                <span id="RExpiry" class="required hidefrom"></span>
+                            </div>
+                            <br>
+                            <div class="forminput">
+                                <label for="cvv">CVV:</label>
+                                <input type="text" id="cvv" name="cvv" maxlength="4" pattern="\d{3,4}"
+                                    placeholder="XXX">
+                                <span id="RCvv" class="required hidefrom"></span>
+                            </div>
+
+                            <br /><br><br><br>
+                        </div>
+                        <div class="forminput onlinebanking hide">
+                            <div class="forminput">
+                                <label for="bank">Select Bank:</label>
+                                <select id="bank" name="bank">
+                                    <option value="" disabled selected>Select your bank</option>
+                                    <option value="Maybank2u">Maybank2u</option>
+                                    <option value="CIMB Clicks">CIMB Clicks</option>
+                                    <option value="Public Bank Online">Public Bank Online</option>
+                                    <option value="RHB Now">RHB Now</option>
+                                    <option value="Hong Leong Connect">Hong Leong Connect</option>
+                                    <option value="AmOnline">AmOnline</option>
+                                    <option value="AffinOnline">AffinOnline</option>
+                                    <option value="UOB Mighty">UOB Mighty</option>
+                                    <option value="HSBCnet">HSBCnet</option>
+                                    <option value="OCBC Online Banking">OCBC Online Banking</option>
+                                    <option value="Bank Islam Online">Bank Islam Online</option>
+                                    <option value="BSN Online">BSN Online</option>
+
+                                    <!-- Add more bank options here -->
+                                </select>
+                                <span id="RBank" class="required hidefrom"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <br /><br /><br>
+
+                    <div class="forminput hidefrom">
+                        <label for="msg">Remarks : </label>
+                        <textarea name="msg" id="msg" cols="60" rows="5"></textarea>
+                    </div>
+
+                    <br /> <br /><br><br><br><br>
+                    <br /><br><br>
+
+                    <button type="sumbit" class="btn-checkout" id="btn-checkout" onclick="return validate()">Check
+                        Out</button>
+                    <button type="sumbit" class="btn-back" id="btn-back"
+                        onclick="back()">&nbsp;&nbsp;&nbsp;Cancel</button>
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <script src="payment.js"></script>
+
+    </main>
+
+    <footer>
+        <a href="#top"><img class="top" src="Pictures/top.svg" alt="back to top button"></a>
+        <div class="footer-content-box">
+            <div class="footer-content">
+                <h2>Product Services</h2>
+                <ul>
+                    <li><a href="repair.html">Customize Service</a></li>
+                    <li><a href="repairbook.html">Customize Appoinment</a></li>
+                    <li><a href="book.html">Visit Reservation</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h2>Our Product</h2>
+                <ul>
+                    <li><a href="product.html#bracelet">Bracelet</a></li>
+                    <li><a href="product.html#earrings">Earrings</a></li>
+                    <li><a href="product.html#neklace">Necklaces</a></li>
+                    <li><a href="product.html#rings">Rings</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h2>Our Company</h2>
+                <ul>
+                    <li><a href="clarity.html">Clarity of Our Diamond</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li style="clear: both;"><a href="location.html">Find Us</a></li>
+                    <li style="clear: both;"><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+
+                <a href="https://wa.me/60161234456?text=I%20want%20to%20book%20an%20appointment%20"><img
+                        src="iconfolder\whatsapp.svg" alt="whatsapp-icon" class="contact-icon" style="clear: both;"></a>
+                <a href="https://www.instagram.com/"><img src="iconfolder\insta.svg" alt="instagram-icon"
+                        class="contact-icon"></a>
+                <a href="https://www.facebook.com/"><img src="iconfolder\facebook.svg" alt="facebook-icon"
+                        class="contact-icon"></a>
+                <a href="https://twitter.com/?lang=en"><img src="iconfolder\twitter.svg" alt="twitter-icon"
+                        class="contact-icon"></a>
+                <a href="tel:+60161234456"><img src="iconfolder\phone.svg" alt="call-icon" class="contact-icon"></a>
+                <a href="sms:+60161234456"><img src="iconfolder\message.svg" alt="sms-icon" class="contact-icon"></a>
+            </div>
+
+        </div>
+
+        <div class="copyright">Copyright &copy; 2023 PHOE.UR.STYLE <br></div>
+
+    </footer>
+
+
+</body>
+
+
+</html>

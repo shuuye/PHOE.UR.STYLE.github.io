@@ -1,0 +1,111 @@
+
+h4{
+    padding-left: 20em;
+    padding-top: 1em;
+    padding-bottom: -1em;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.container{
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+
+}
+
+.clarity2,
+.clarity3,
+.clarity4{
+    flex: 1 1 21rem;
+    background:rgb(172, 222, 222);
+}
+
+.content2{
+    flex: 1 1 21rem;
+
+}
+.content3{
+    flex: 1 0 21rem;
+    padding-top: 10em;
+    line-height: 5em;
+}
+.content4{
+    flex: 1 0 21rem;
+    padding-top: 7em;
+    line-height: 5em;
+}
+
+.content2 h3{
+    font-size: 2rem;
+    color: black;
+}
+.content3 h3,
+.content4 h3{
+    font-size: 2rem;
+    color: black;
+    line-height: 3em;
+}
+
+.content2 p{
+    margin: 0.5rem 0 2rem;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+.content3 p,
+.content4 p{
+    margin: 0.5rem 0 2rem;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 2em;
+}
+
+.clarity2 img{
+    padding-top: 5em;
+}
+
+
+.clarity1 img,
+.clarity2 img,
+.clarity3 img,
+.clarity4 img{
+    animation :animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-11px,0);
+    }
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(Pictures/clarity1.webp) no-repeat;
+    background-size:100%;
+    background-position: right;
+    text-align: justify;
+
+}
+.home .content{
+    max-width: 100rem;
+    padding-right: 1em;
+}
+.home .content h3{
+    font-size: 3rem;
+    color: black;
+    padding-left: 18em;
+    
+}
+
+.home .content p{
+    font-size: 1.1rem;
+    color:grey ;
+    padding: 1rem 0;
+    line-height: 1.5;
+    padding-left: 50em;
+    text-align: justify;
+
+}

@@ -1,0 +1,469 @@
+:root {
+    --bgcolor: white;
+    --maincolor: black;
+    --textcolor: #5b5c5c;
+    --spcolor: #9EECFF;
+}
+
+
+/**/
+/*------------------------------------ ------------------------------------------ */
+/*------------------------------------ payment cart------------------------------------------ */
+.payment-cart-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+/*------------------------------------Product Box Design------------------------------------------ */
+img {
+    width: 100%;
+}
+
+section {
+    padding: 2rem 0 4rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.shop {
+    margin-top: 0rem;
+}
+
+.shop-content {
+    display: grid;
+    padding-left: 2%;
+    padding-right: 2%;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    gap: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.product-box {
+    position: relative;
+}
+
+.product-box:hover {
+    padding: 10px;
+    border: 3px solid var(--spcolor);
+    transition: 0.4s;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    min-height: 50px;
+}
+
+/*------------------------------------Product Box Design End------------------------------------------ */
+
+/*------------------------------------Cart Function------------------------------------------ */
+.price {
+    font-weight: 500;
+}
+
+.add-cart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    height: 15%;
+    width: 30%;
+}
+
+.add-cart:hover {
+    display: block;
+    opacity: 30%;
+
+}
+
+.cart-box {
+    display: grid;
+    grid-template-columns: 32% 50% 10%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+
+}
+
+.detail-box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price {
+    font-weight: 500;
+}
+
+.cart-quantity {
+    border: 1px solid;
+    outline-color: var(--maincolor);
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove {
+    cursor: pointer;
+
+}
+
+.cart-remove:hover {
+    opacity: 80%;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid;
+}
+
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price {
+    margin-left: 0.5rem;
+}
+
+.btn-buy {
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--spcolor);
+    color: var(--bgcolor);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-buy:hover {
+    background: var(--textcolor);
+}
+
+#close-cart {
+    /*close button*/
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    color: var(--maincolor);
+    cursor: pointer;
+    width: 8%;
+    height: 5%;
+}
+
+#cart-icon {
+    width: 2%;
+    height: 60%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 2%;
+    min-height: 26px;
+    min-width: 26px;
+}
+
+
+
+.cart.active {
+    /*control cart to open and close*/
+    right: 0;
+}
+
+/*------------------------------------Cart Function End ------------------------------------------ */
+
+/*------------------------------------Cart Box Design------------------------------------------ */
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    height: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    background: var(--bgcolor);
+    box-shadow: -2px 0 10px hsl(0 4% 15%/ 10%);
+    z-index: 100;
+    transition: 0.3s;
+    overflow: scroll;
+
+}
+
+.cart-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+
+}
+
+/*------------------------------------Cart Box Design End------------------------------------------ */
+
+/*------------------------------------scroll bar Design------------------------------------------ */
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: var(--bgcolor);
+}
+
+.cart::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background-color: var(--bgcolor);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bgcolor);
+
+}
+
+/*------------------------------------scroll bar Design end------------------------------------------ */
+
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+.overlay {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 90%;
+    /* Full width (cover the whole page) */
+    height: 85%;
+    /* Full height (cover the whole page) */
+    top: 60px;
+    left: 90px;
+    bottom: 0;
+    background-color: rgb(255, 255, 255);
+    /* Black background with opacity */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 3;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+    padding: 3%;
+    overflow: scroll;
+}
+
+#background {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    z-index: 1;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 3;    
+}
+
+
+.details:hover {
+    text-decoration: underline var(--spcolor) 3px;
+    font-weight: 600;
+}
+
+#sizeguide {
+    position: relative;
+    overflow: scroll;
+    width: 100%;
+    float: left;
+    text-align: left;
+    line-height: 2;
+    font-weight: 300;
+}
+
+#sizeguide th {
+    font-weight: 400;
+}
+
+#sizeguide caption,
+#description h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+}
+
+#leftside {
+    float: left;
+    padding: 1%;
+    width: 50%;
+}
+
+#sizeguide-picture {
+    padding: 1%;
+    position: relative;
+    float: left;
+    width: 50%;
+
+}
+
+.overlay::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#description {
+    padding-bottom: 5%;
+    padding-right: 5%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    word-spacing: 2px;
+    line-height: 1.25;
+}
+
+#description ul, #description ol{
+    padding-left: 20px;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width:1080px) {
+    .nav {
+        padding: 15px;
+    }
+
+    section {
+        padding: 3rem 0 2rem;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .shop {
+        margin-top: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav {
+        padding: 11px;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .cart {
+        width: 320px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .shop {
+        margin-top: 1rem !important;
+    }
+
+    .cart {
+        width: 280px;
+    }
+}
+
+.alert {
+    padding: 20px;
+    background-color: #2196F3;
+    color: white;
+  }
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+  span#emphasize a:hover{
+    text-decoration: underline;
+    color: #FFD700;
+    font-weight: 800;
+}
+
+span#emphasize a{
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.animated-text {
+    display: inline-block; /* Needed to make the text animate from left to right */
+    animation: slideInLeft 30s linear infinite; /* Adjust the animation duration as per your preference */
+    color: white;
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .infinite-scroll {
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    overflow: hidden; /* Hides the extra content outside the container */
+  }

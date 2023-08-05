@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Bracelet, Ring, jewellery">
+    <title>Where We Are | PHOE.UR.STYLE</title>
+    <link rel="icon" type="pictures/Favicon" href="Pictures/faviconlogo.jpg" defer>
+    <link rel="stylesheet" type="text/css" href="layout/pc_reset.css" defer>
+    <link rel="stylesheet" type="text/css" href="cart.css" defer>
+    <link rel="stylesheet" type="text/css" href="layout/main.css" defer>
+    <link rel="stylesheet" type="text/css" href="location.css" defer>
+</head>
+
+<body>
+    
+    <header id="#top">
+        <a href="book.html"> <img src="iconfolder\booking-icon.svg" alt="booking-icon" id="booking-icon"></a>
+        <div id="title">
+            <h1><a href="index.html">PHOE.UR.STYLE</a></h1>
+        </div>
+
+        <img src="iconfolder\cart-icon.svg" alt="cart-icon" id="cart-icon">
+        <a href="login.html"><img src="iconfolder\signin.svg" alt="signin-icon" id="signin-icon"></a>
+
+    </header>
+
+
+    <nav>
+        <button><a href="index.html">Home</a></button>&nbsp;
+        <button><a href="product.html">Product</a></button>&nbsp;
+
+        <button><a href="location.html">Store Locator</a></button>&nbsp;
+        <button><a href="faq.html">FAQs </a></button>&nbsp;
+        <button><a href="about.html">About Us </a></button>&nbsp;
+    </nav>
+
+    <!--CART FUNCTION-->
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!--<div class="cart-box">
+                    <img src="PRODUCTIMG" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">PINK</div>
+                        <div class="cart-price">RM 0</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                
+                    
+                    <img src="iconfolder/remove-cart.svg" alt="remove-cart" id="remove-cart">
+                
+                </div>
+            -->
+        </div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">RM 0</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+
+        <img src="iconfolder/close-cart.svg" alt="close-cart" id="close-cart">
+
+        <script src="cart.js"></script>
+
+    </div>
+
+    <main class="location-body">
+
+        <div class="searchfun">
+            <h1 class="location-title">Store Locator</h1>
+            <div class="location-input-box">
+                <label for="location"> Search for the nearest branch: </label>
+                <select type="text" placeholder="locaiton" name="location" class="location-choose">
+                    <option value="0">Choose location -</option>
+                    <option value="1">Kuala Lumpur</option>
+                    <option value="2">Selangor</option>
+                    <option value="3">Penang</option>
+                    <option value="4">Ipoh</option>
+                    <option value="5">Sabah</option>
+                    <option value="6">Sarawak</option>
+                    <option value="7">Johor</option>
+                </select>
+
+                <button class="find-location"><img src="iconfolder/search-icon.svg" alt=""></button>
+
+            </div>
+            <div class="map-box">
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8149950.540941561!2d105.11893598155832!3d4.12791844760134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3034d3975f6730af%3A0x745969328211cd8!2sMalaysia!5e0!3m2!1sen!2smy!4v1679744740794!5m2!1sen!2smy" width="95%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 
+                </div>
+
+                <div class="hide-map map">
+                    <iframe class="kl"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d784.7985219442254!2d101.71362567049688!3d3.1481906786291387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362c66997f29%3A0x39d5f0e58f7efd00!2sTiffany%20%26%20Co.!5e0!3m2!1sen!2smy!4v1679731642344!5m2!1sen!2smy"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="hide-map map">
+                    <iframe class="selangor"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.12382028374!2d101.26863141454264!3d3.31100627975834348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ccf48c6d9c00d5%3A0x976a70a7adee49a1!2sBS%20Jewellery%20Sdn%20Bhd%20(Kuala%20Selangor)!5e0!3m2!1sen!2smy!4v1679732908178!5m2!1sen!2smy"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="hide-map map">
+                    <iframe class="penang"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6081.4115860179445!2d100.30827635438513!3d5.43488427861381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac30385605d6d%3A0x33c674011f2885aa!2sGurney%20Plaza!5e0!3m2!1sen!2smy!4v1679732517564!5m2!1sen!2smy"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="hide-map map">
+                    <iframe class="ipoh"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9824192533483!2d101.08569463488766!3d4.597172000000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31caed383c44137b%3A0x210c32fd8dff9681!2sIpoh%20Parade!5e0!3m2!1sen!2smy!4v1679732804421!5m2!1sen!2smy"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="hide-map map">
+                    <iframe class="sabah"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.174778785857!2d116.07303071455347!3d5.970651945675205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x323b69bd68013baf%3A0xae8b04789f36de91!2sLa&#39;vince%20Jewellery!5e0!3m2!1sen!2smy!4v1679732980745!5m2!1sen!2smy"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="hide-map map">
+                    <iframe class="sarawak"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.402057370862!2d110.36713471453872!3d1.5266724488866585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31fba70519b20649%3A0xc166c17cf6ce90bc!2sVivacity%20Megamall!5e0!3m2!1sen!2smy!4v1679733046650!5m2!1sen!2smy"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="hide-map map">
+                    <iframe class="johor"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21604.49117629408!2d103.61523402236331!3d1.6016629960926125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da773a2e8bd78b%3A0xb917101b2ac98c08!2sJohor%20Premium%20Outlets!5e0!3m2!1sen!2smy!4v1679732422384!5m2!1sen!2smy"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="imageblock">
+            <div class="imgtext"> Our Store</div>
+            
+            <img class="img" src="locationPic/store3.jpg" >
+            
+        </div>
+
+        <script src="about.js"></script>
+
+    </main>
+
+    <footer>
+        <a href="#top"><img class="top" src="Pictures/top.svg" alt="back to top button"></a>
+        <div class="footer-content-box">
+            <div class="footer-content">
+                <h2>Product Services</h2>
+                <ul>
+                    <li><a href="repair.html">Customize Service</a></li>
+                    <li><a href="repairbook.html">Customize Appoinment</a></li>
+                    <li><a href="book.html">Visit Reservation</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h2>Our Product</h2>
+                <ul>
+                    <li><a href="product.html#bracelet">Bracelet</a></li>
+                    <li><a href="product.html#earrings">Earrings</a></li>
+                    <li><a href="product.html#neklace">Necklaces</a></li>
+                    <li><a href="product.html#rings">Rings</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h2>Our Company</h2>
+                <ul>
+                    <li><a href="clarity.html">Clarity of Our Diamond</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li style="clear: both;"><a href="location.html">Find Us</a></li>
+                    <li style="clear: both;"><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+
+                <a href="https://wa.me/60161234456?text=I%20want%20to%20book%20an%20appointment%20"><img
+                        src="iconfolder\whatsapp.svg" alt="whatsapp-icon" class="contact-icon" style="clear: both;"></a>
+                <a href="https://www.instagram.com/"><img src="iconfolder\insta.svg" alt="instagram-icon"
+                        class="contact-icon"></a>
+                <a href="https://www.facebook.com/"><img src="iconfolder\facebook.svg" alt="facebook-icon"
+                        class="contact-icon"></a>
+                <a href="https://twitter.com/?lang=en"><img src="iconfolder\twitter.svg" alt="twitter-icon"
+                        class="contact-icon"></a>
+                <a href="tel:+60161234456"><img src="iconfolder\phone.svg" alt="call-icon" class="contact-icon"></a>
+                <a href="sms:+60161234456"><img src="iconfolder\message.svg" alt="sms-icon" class="contact-icon"></a>
+            </div>
+
+        </div>
+
+        <div class="copyright">Copyright &copy; 2023 PHOE.UR.STYLE <br></div>
+
+    </footer>
+
+
+</body>
+
+
+</html>

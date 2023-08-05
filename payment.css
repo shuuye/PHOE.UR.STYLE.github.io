@@ -1,0 +1,545 @@
+:root {
+    --bgcolor: white;
+    --maincolor: black;
+    --textcolor: #5b5c5c;
+    --spcolor: #9EECFF;
+}
+
+.payment-section {
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 8%;
+    box-shadow: -2px 0 10px hsl(0 4% 15%/ 20%);
+    float: left;
+
+}
+
+.sizeguidesection {
+    float: left;
+    width: 30%;
+    margin: 2%;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-height: 700px;
+    overflow: scroll;
+
+}
+
+#sizeguide {
+    position: relative;
+    overflow: scroll;
+    width: 100%;
+    float: left;
+    text-align: left;
+    line-height: 2;
+    font-weight: 300;
+    border-bottom: var(--spcolor) 2px solid;
+    padding-bottom: 3%;
+}
+
+#sizeguide th {
+    font-weight: 400;
+}
+
+.payment-section .cart-product-title {
+    font-size: 15px;
+}
+
+#sizeguide caption,
+#description h2 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    font-style: italic;
+}
+
+main::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+.forminput>label {
+    display: block;
+    float: left;
+    clear: left;
+    margin: 5px;
+    width: 200px;
+    font-size: 15px;
+    color: var(--maincolor);
+    font-weight: 400;
+}
+
+.forminput {
+    margin-bottom: 10px;
+    display: block;
+    min-height: 20px;
+}
+
+
+.size {
+    display: block;
+    margin: 8px;
+    min-width: 100px;
+    background-color: white;
+    padding: 5px;
+
+}
+
+.size:focus {
+    background-color: rgba(225, 225, 225, 0.278);
+}
+
+
+#date {
+    width: 20%;
+    padding: 0%;
+    margin: 0%;
+    float: left;
+    margin-right: 6%;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+label[for="date"] {
+    float: left;
+}
+
+#deliveryinfo::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+
+.payment-section::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.payment-box-title {
+    padding: 5%;
+    padding-bottom: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+
+}
+
+.payment-box {
+    padding: 4%;
+    padding-top: 1%;
+    padding-bottom: 0px;
+    margin-top: 1rem;
+    display: block;
+
+}
+
+.payment-box::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.payment-cart-box {
+    display: block;
+    clear: both;
+    border-bottom: var(--spcolor) solid 1px;
+
+}
+
+
+
+.cart-price {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1%;
+    clear: both;
+}
+
+.cart-img {
+    width: 20%;
+    object-fit: contain;
+    position: static;
+    padding: 10px;
+    float: left;
+}
+
+.detail-box {
+    padding: 2%;
+    position: static;
+    float: left;
+    width: 70%;
+}
+
+.cart-product-title {
+    font-weight: 600;
+    font-size: large;
+    padding: 1%;
+}
+
+.displayqty {
+    float: left;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+
+
+.cart-quantity {
+    border: 1px solid;
+    outline-color: var(--maincolor);
+    height: 1rem;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 2%;
+
+}
+
+.cart-remove {
+    cursor: pointer;
+    position: static;
+    float: left;
+    width: 3.5%;
+    padding-top: 5%;
+}
+
+.cart-remove:hover {
+    opacity: 80%;
+}
+
+.total {
+    margin: 5%;
+    margin-top: 0;
+    padding: 2%;
+    display: block;
+    position: static;
+    border-top: 1px solid;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.total-title {
+    position: relative;
+    width: 15%;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    /*text-align: right;*/
+    /*padding-right: 3%;*/
+}
+
+.total-price {
+    float: left;
+    position: relative;
+    width: 40%;
+    font-size: 20px;
+    font-weight: 500;
+    /*text-align: center;*/
+}
+
+.btn-checkout {
+    clear: both;
+    display: block;
+    margin: 1.5rem auto 2rem auto;
+    padding: 12px 20px;
+    border: none;
+    background: var(--textcolor);
+    color: var(--bgcolor);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 125px;
+}
+
+.btn-checkout:hover {
+    background: var(--spcolor);
+}
+
+.btn-back {
+    clear: both;
+    display: flex;
+    margin: 1.5rem auto 2rem auto;
+    padding: 12px 20px;
+    border: none;
+    background: rgba(128, 128, 128, 0.338);
+    color: var(--bgcolor);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 125px;
+}
+
+
+
+.btn-back:hover {
+    background: var(--textcolor);
+}
+
+#receipt-title {
+    display: none;
+}
+
+.shipping-section {
+    width: 95%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fafafa;
+    display: block;
+    margin-bottom: 3%;
+}
+
+#deliveryinfo {
+    width: 50%;
+    padding: 6%;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    display: block;
+
+}
+
+.form-division {
+    width: 95%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fafafa;
+    padding: 5%;
+    display: block;
+    margin-bottom: 3%;
+}
+
+.shipping-section::after,
+#deliveryinfo::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.formtitle {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 3%;
+}
+
+#deliveryinfo label {
+    float: left;
+    width: 25%;
+    text-align: right;
+    padding-top: 2%;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+#deliveryinfo input[type="text"],
+#deliveryinfo input[type="email"],
+#deliveryinfo input[type="tel"],
+#deliveryinfo textarea {
+    float: left;
+    width: 65%;
+    margin-left: 2%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#deliveryinfo input[type="text"]:focus:valid,
+#deliveryinfo input[type="email"]:focus:valid,
+#deliveryinfo input[type="tel"]:focus:valid,
+#deliveryinfo input[type="number"]:focus:valid,
+#deliveryinfo #date:focus:valid {
+    background: rgb(220, 255, 220) url(iconfolder/rb_valid.png) bottom right no-repeat;
+}
+#deliveryinfo input[type="text"]:invalid,
+#deliveryinfo input[type="email"]:invalid,
+#deliveryinfo input[type="tel"]:invalid,
+#deliveryinfo input[type="number"]:invalid,
+#deliveryinfo #date:focus:valid {
+    background: rgb(255, 232, 233) url(iconfolder/rb_invalid.png) bottom right no-repeat;
+}
+
+#deliveryinfo select {
+    width: 65%;
+    margin-left: 2%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+#deliveryinfo input[type="number"] {
+    width: 50px;
+    margin-left: 10px;
+}
+
+#deliveryinfo #date {
+    background-color: #5b5c5c22;
+}
+
+
+@media print {
+
+
+    input[type='submit'],
+    header,
+    footer,
+    nav,
+    #btn-checkout,
+    #formtitle,
+    select,
+    .btn-back,
+    .formtitle,
+    .hidefrom,
+    .size {
+        display: none;
+    }
+
+    .payment-section,
+    #deliveryinfo,
+    .shipping-section {
+        width: 100%;
+        margin: 0;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+    }
+
+    #deliveryinfo {
+        page-break-inside: avoid;
+        position: absolute;
+        top: 220px;
+        min-height: 600px;
+        border-radius: 0;
+
+    }
+
+    #receipt-title {
+        display: block;
+
+    }
+
+    .payment-box-title,
+    .cart-remove {
+        display: none;
+    }
+
+    #deliveryinfo input[type="text"],
+    #deliveryinfo input[type="email"],
+    #deliveryinfo input[type="tel"],
+    #deliveryinfo textarea,
+    #deliveryinfo select,
+    #deliveryinfo input[type="number"],
+    #deliveryinfo #date,
+    #deliveryinfo label,
+    #deliveryinfo input,
+    input{
+        border: none;
+        text-align: left;
+        padding: none;
+        margin: none;
+        width: fit-content;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .payment-cart-box {
+        border-bottom: none;
+    }
+
+    .payment-box {
+        border-top: var(--maincolor) solid 1px;
+    }
+
+    #receipt-display {
+        position: absolute;
+        top: 1050px;
+    }
+
+    #receipt-display::before {
+        content: "Order Details";
+        padding: 2%;
+        font-weight: 600;
+        font-size: 19px;
+    }
+
+    .cart-quantity {
+        border: none;
+        padding: 0;
+    }
+
+    .payment-box-title::after {
+        content: "Your order has been completed. We hope to see you again soon. Please keep this safe for any future correspondence. Take note that all deliveries will be recieved in 1-7 working days. ";
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1;
+    }
+
+    #date {
+        float: right;
+        border-bottom: black solid 1px;
+    }
+    .line {
+        display: block;
+        width: 100%;
+        border-top: black solid 1px;
+    }
+
+}
+
+/*------------------------------------scroll bar Design------------------------------------------ */
+::-webkit-scrollbar {
+    width: 0px;
+    background-color: var(--bgcolor);
+}
+
+.cart::-webkit-scrollbar-track {
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    background-color: var(--bgcolor);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bgcolor);
+
+}
+
+/*------------------------------------scroll bar Design end------------------------------------------ */
+
+.required {
+    font-family: serif;
+    color: red;
+    font-size: 1.2em
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+  }
+

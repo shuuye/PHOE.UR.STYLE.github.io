@@ -1,0 +1,66 @@
+:root{
+    --bgcolor: white;
+    --maincolor: black;
+    --textcolor: #5b5c5c;
+    --spcolor: #9EECFF;
+}
+
+/* Add motion effects to the main section */
+.repair2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  /* Style the text elements */
+  .repair2 p {
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .Text1 {
+    margin-bottom: 20px;
+    font-size: 4rem;
+  }
+
+  .Text1 p {
+    animation: color-change 1s linear infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: #9EECFF; }
+    25% { color: #ffffff; }
+    50% { color: #91D8F2; }
+    75% { color: #EED8D8; }
+    100% { color: #CFB7B7; }
+  }
+
+  .Text2{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    padding: 2%;
+  }
+  
+  .Text3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  
+ 
+  

@@ -1,0 +1,265 @@
+:root {
+    --bgcolor: white;
+    --maincolor: black;
+    --textcolor: #5b5c5c;
+    --spcolor: #9EECFF;
+}
+
+@font-face {
+    font-family: Worksans;
+    src: url('Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+@keyframes middleToLeft {
+    0%, 7% {
+        transform: translateX(5000px)
+      }
+      100% {
+        transform: translateX(0);
+      }
+  }
+
+  @keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(5deg);
+    }
+   
+  }
+
+
+.about-body {
+    width: 100%;
+    position: relative;
+}
+
+.about-title {
+    display: block;
+    font-size:calc(20px + 1.5vw);
+    text-decoration: underline var(--spcolor) 2px;
+    padding: 1%;
+    animation: middleToLeft 1.5s, wiggle 0.5s ease-in-out 1.5s;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.desc {
+    
+    text-align: justify;
+    font-size:25px;
+    position: relative;
+    
+}
+
+
+
+.desc > p{
+    padding-bottom: 2%;
+}
+
+.desc p:nth-of-type(1){
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    padding-top: 20%;
+    padding-right: 4%;
+    width: 50%;
+    
+    opacity: 70%;
+    
+}
+
+.desc p:nth-of-type(2){
+    position: absolute;
+    float: left;
+    left: 0;
+    padding-top: 8%;
+    padding-left: 4%;
+    width: 30%;
+    
+    opacity: 70%;
+}
+
+.desc p:nth-of-type(3){
+    position: absolute;
+    float: right;
+    right: 0;
+    padding-top: 8%;
+    padding-right: 4%;
+    width: 30%;
+    
+    opacity: 70%;
+}
+
+.desc p:nth-of-type(4){
+    position: absolute;
+    float: left;
+    left: 0;
+    padding-top: 8%;
+    padding-left: 4%;
+    width: 30%;
+    
+    opacity: 70%;
+}
+
+
+.desc p:nth-of-type(5){
+    position: absolute;
+    float: left;
+    left: 0;
+    padding-top: 8%;
+    padding-left: 4%;
+    width: 30%;
+    opacity: 70%;
+}
+
+.desc p:nth-of-type(6){
+    position: absolute;
+    float: right;
+    right: 0;
+    padding-top: 8%;
+    padding-right: 4%;
+    width: 30%;
+    opacity: 70%;
+}
+
+@media screen and (max-width:1296px) {
+    .desc{
+        font-size: 20px; 
+        
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .desc{
+        font-size: 15px; 
+        
+    }
+
+    
+    .desc p:nth-of-type(1){
+        position: absolute;
+        float: right;
+        top: 0;
+        right: 0;
+        padding-top: 15%;
+        padding-right: 4%;
+        width: 50% !important;
+    }
+
+    .desc > p:nth-of-type(2){
+        width:22% !important;   
+            
+    }
+
+
+}
+
+@media screen and (max-width:1080px) {
+    .desc{
+        font-size: 15px; 
+        
+    }
+
+    
+    .desc p:nth-of-type(1){
+        position: absolute;
+        float: right;
+        top: 0;
+        right: 0;
+        padding-top: 15%;
+        padding-right: 4%;
+        width: 50% !important;
+    }
+
+    .desc > p:nth-of-type(2){
+        width:22% !important;   
+            
+    }
+
+    img:nth-of-type(2),img:nth-of-type(5){
+        min-height:550px;  
+            
+    }
+    img:nth-of-type(4),img:nth-of-type(6), img:nth-of-type(3){
+        min-height:400px;  
+    }
+
+
+}
+
+@media screen and (max-width: 580px) {
+    .desc{
+        font-size: 12px; 
+        
+    }
+
+    .desc p:nth-of-type(1){
+        position: absolute;
+        float: right;
+        top: 0;
+        right: 0;
+        padding-top: 20%;
+        padding-right: 4%;
+        width: 50% !important;
+    }
+
+    .desc > p:nth-of-type(2){
+        width:22% !important;   
+            
+    }
+
+    img:nth-of-type(2),img:nth-of-type(5){
+        min-height:550px;  
+            
+    }
+    img:nth-of-type(4),img:nth-of-type(6), img:nth-of-type(3),img:nth-of-type(1){
+        min-height:400px;  
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .desc{
+        font-size: 10px; 
+        
+    }
+
+    
+    .desc p:nth-of-type(1){
+        position: absolute;
+        float: right;
+        top: 0;
+        right: 0;
+        padding-top: 20%;
+        padding-right: 4%;
+        width: 50% !important;
+    }
+
+    .desc > p:nth-of-type(2){
+        width:22% !important;   
+            
+    }
+
+    
+    img:nth-of-type(2),img:nth-of-type(5){
+        min-height:550px;  
+            
+    }
+    img:nth-of-type(4),img:nth-of-type(6), img:nth-of-type(3){
+        min-height:400px;  
+    }
+}

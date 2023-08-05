@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Bracelet, Ring, jewellery">
+    <title>About US | PHOE.UR.STLYE</title>
+    <link rel="icon" type="pictures/Favicon" href="Pictures/faviconlogo.jpg" defer>
+    <link rel="stylesheet" type="text/css" href="layout/pc_reset.css" defer>
+    <link rel="stylesheet" type="text/css" href="cart.css" defer>
+    <link rel="stylesheet" type="text/css" href="layout/main.css" defer>
+    <link rel="stylesheet" type="text/css" href="about.css" defer>
+</head>
+
+<body>
+
+    <header id="#top">
+        <a href="book.html"> <img src="iconfolder\booking-icon.svg" alt="booking-icon" id="booking-icon"></a>
+        <div id="title">
+            <h1><a href="index.html">PHOE.UR.STYLE</a></h1>
+        </div>
+
+        <img src="iconfolder\cart-icon.svg" alt="cart-icon" id="cart-icon">
+        <a href="login.html"><img src="iconfolder\signin.svg" alt="signin-icon" id="signin-icon"></a>
+
+    </header>
+
+
+    <nav>
+        <button><a href="index.html">Home</a></button>&nbsp;
+        <button><a href="product.html">Product</a></button>&nbsp;
+        <button><a href="location.html">Store Locator</a></button>&nbsp;
+        <button><a href="faq.html">FAQs </a></button>&nbsp;
+        <button><a href="about.html">About Us </a></button>&nbsp;
+    </nav>
+
+    <!--CART FUNCTION-->
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+            <!--<div class="cart-box">
+                    <img src="PRODUCTIMG" alt="" class="cart-img">
+                    <div class="detail-box">
+                        <div class="cart-product-title">PINK</div>
+                        <div class="cart-price">RM 0</div>
+                        <input type="number" value="1" class="cart-quantity">
+                    </div>
+                
+                    
+                    <img src="iconfolder/remove-cart.svg" alt="remove-cart" id="remove-cart">
+                
+                </div>
+            -->
+        </div>
+
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">RM 0</div>
+        </div>
+        <button type="button" class="btn-buy">Buy Now</button>
+
+        <img src="iconfolder/close-cart.svg" alt="close-cart" id="close-cart">
+
+        <script src="cart.js"></script>
+
+    </div>
+
+    <main class="about-body">
+
+        <script>
+            window.addEventListener("scroll", reveal);
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+        </script>
+
+        <h1 class="about-title">Our Company</h1>
+        <div class="desc">
+            <p class="reveal">
+                <b>What Are We?</b> <br><br>
+                PHOE.UR.STYLE is a one-of-a-kind online jewelry shop that is dedicated to producing and offering
+                high-quality handcrafted contemporary jewelry at a reasonable cost. Our jewelry pieces are designed
+                and crafted by skilled artisans who are passionate about their craft and committed to delivering
+                excellence in every piece they create.
+            </p>
+            <img src="AboutPic/bg1.jpg">
+
+
+            <p class="reveal">
+                <b>Our Jewellery</b> <br><br>
+                We understand that jewelry is more than just an accessory - it's an extension of your personal style
+                and a way to express yourself. That's why we strive to offer a diverse range of unique and stylish
+                designs that cater to all tastes and preferences, from classic and timeless to modern and edgy.
+            </p>
+            <img src="AboutPic/bg2.jpg">
+
+            <p class="reveal">
+                <b>Our Materials</b> <br><br>
+                Our jewelry pieces are made with only the highest quality materials, including sterling silver, gold
+                plating, and gemstones, ensuring that they are durable and long-lasting. We also take great care in
+                selecting materials that are eco-friendly and sustainable, minimizing our impact on the environment.
+            </p>
+            <img src="AboutPic/bg3.jpg">
+            <p style="color: white;" class="reveal">
+                <b style=" color: white;">We Support</b> <br><br>
+                One of the things that set PHOE.UR.STYLE apart is our commitment to supporting local artisans and
+                small businesses. We work with a network of skilled craftsmen and women from around the world, each
+                with their own unique style and expertise. By partnering with these artisans, we are able to offer
+                one-of-a-kind pieces that you won't find anywhere else.
+            </p>
+            <img src="AboutPic/bg4.jpg">
+            <p class="reveal">
+                <b>We believe</b> <br><br>
+                We believe that everyone should have access to stylish and affordable jewelry, which is why we
+                strive to keep our prices reasonable and competitive. We believe that you don't have to break the
+                bank to look and feel great, and we are dedicated to making that a reality for our customers.
+                Our online store is designed to make shopping for jewelry a fun and hassle-free experience. Our
+                website is easy to navigate, and we offer a wide range of payment options to suit your needs. Our
+                customer service team is always on hand to answer any questions you may have and provide assistance
+                with your order.
+            </p>
+            <img src="AboutPic/bg5.jpg">
+            <p style="color: white;" class="reveal">
+                <b style="color: white;">Our Passionate</b> <br><br>
+                At PHOE.UR.STYLE, we are passionate about delivering exceptional quality, style, and value in every
+                piece of jewelry we produce. Whether you're looking for a statement piece to complete your outfit or
+                a unique gift for a loved one, we have something for everyone.
+            </p>
+            <img src="AboutPic/bg6.jpg">
+        </div>
+    </main>
+
+    <footer>
+        <a href="#top"><img class="top" src="Pictures/top.svg" alt="back to top button"></a>
+        <div class="footer-content-box">
+            <div class="footer-content">
+                <h2>Product Services</h2>
+                <ul>
+                    <li><a href="repair.html">Customize Service</a></li>
+                    <li><a href="repairbook.html">Customize Appoinment</a></li>
+                    <li><a href="book.html">Visit Reservation</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h2>Our Product</h2>
+                <ul>
+                    <li><a href="product.html#bracelet">Bracelet</a></li>
+                    <li><a href="product.html#earrings">Earrings</a></li>
+                    <li><a href="product.html#neklace">Necklaces</a></li>
+                    <li><a href="product.html#rings">Rings</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h2>Our Company</h2>
+                <ul>
+                    <li><a href="clarity.html">Clarity of Our Diamond</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li style="clear: both;"><a href="location.html">Find Us</a></li>
+                    <li style="clear: both;"><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+
+                <a href="https://wa.me/60161234456?text=I%20want%20to%20book%20an%20appointment%20"><img
+                        src="iconfolder\whatsapp.svg" alt="whatsapp-icon" class="contact-icon" style="clear: both;"></a>
+                <a href="https://www.instagram.com/"><img src="iconfolder\insta.svg" alt="instagram-icon"
+                        class="contact-icon"></a>
+                <a href="https://www.facebook.com/"><img src="iconfolder\facebook.svg" alt="facebook-icon"
+                        class="contact-icon"></a>
+                <a href="https://twitter.com/?lang=en"><img src="iconfolder\twitter.svg" alt="twitter-icon"
+                        class="contact-icon"></a>
+                <a href="tel:+60161234456"><img src="iconfolder\phone.svg" alt="call-icon" class="contact-icon"></a>
+                <a href="sms:+60161234456"><img src="iconfolder\message.svg" alt="sms-icon" class="contact-icon"></a>
+            </div>
+
+        </div>
+
+        <div class="copyright">Copyright &copy; 2023 PHOE.UR.STYLE <br></div>
+
+    </footer>
+
+
+</body>
+
+
+</html>

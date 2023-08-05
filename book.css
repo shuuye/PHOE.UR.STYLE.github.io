@@ -1,0 +1,155 @@
+:root {
+    --bgcolor: white;
+    --maincolor: black;
+    --textcolor: #5b5c5c;
+    --spcolor: #9EECFF;
+}
+
+@font-face {
+    font-family: Worksans;
+    src: url('Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+.location-body {    
+    padding-top: 1%;
+    padding: 5%;
+
+}
+
+.location-body::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+.searchfun {
+    float: left;
+    width: 100%;
+    position: static;
+   padding-bottom: 3%;
+}
+
+.location-title h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.find-location {
+    cursor: pointer;
+    width: 3rem;
+}
+
+.location-input-box {
+    clear: both;
+    
+}
+
+.location-input-box > select{
+    border-radius: 10px;
+    padding: 6px;
+    
+}
+
+.location-input-box > select:focus{
+   border: var(--textcolor) solid 1px;
+   background-color: rgb(224, 237, 247);
+
+}
+
+.address {
+    margin-top: 5%;
+}
+
+.hide-address {
+    display: none;
+    margin-top: 1.5%;
+}
+
+.address-box {
+    text-align: center;
+}
+
+.img{
+    float: left;
+    width: 65%;
+    border-radius: 3%;
+}
+
+.imageblock{
+    padding-top: 10px;
+    width: 100%;
+    position: static;
+}
+
+
+.imgtext{
+    width: 30%;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 2.5vw;
+    font-weight: 700;
+    min-height: 200px;
+}
+
+#location h1 {
+    text-align: center;
+}
+div #pic {
+    margin-top: 2%;
+    width: 50%;
+    
+}
+
+div #pic:hover {
+    margin-top: 2%;
+    width: 55%;
+    transition: width 0.5s ease-out, height 0.5s ease-out 0.5s;
+    overflow: hidden;
+}
+
+.imagetext {
+    position: relative;
+}
+
+.showtext {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    margin-left: 41%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagetext:hover .showtext {
+    opacity: 1;
+}
+
+#selectbutton {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    height: 20%;
+    margin-top: 4%;
+}
+
+
+#selectbutton:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

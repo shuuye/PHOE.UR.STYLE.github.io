@@ -1,0 +1,88 @@
+:root {
+    --bgcolor: white;
+    --maincolor: black;
+    --textcolor: #5b5c5c;
+    --spcolor: #9EECFF;
+}
+
+@font-face {
+    font-family: Worksans;
+    src: url('Work_Sans/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+.location-body {    
+    padding-top: 1%;
+    padding: 5%;
+
+}
+
+.location-body::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+
+.searchfun {
+    float: left;
+    width: 100%;
+    position: static;
+   padding-bottom: 3%;
+}
+
+.location-title {
+    font-size: 2rem;
+}
+
+.find-location {
+    cursor: pointer;
+    width: 3rem;
+}
+
+.location-input-box {
+    clear: both;
+    
+}
+
+.location-input-box > select{
+    border-radius: 10px;
+    padding: 6px;
+    
+}
+
+.location-input-box > select:focus{
+   border: var(--textcolor) solid 1px;
+   background-color: rgb(224, 237, 247);
+
+   
+}
+
+
+.hide-map {
+    display: none;
+}
+
+.img{
+    float: left;
+    width: 65%;
+    border-radius: 3%;
+}
+
+.imageblock{
+    padding-top: 10px;
+    width: 100%;
+    position: static;
+}
+
+
+.imgtext{
+    width: 30%;
+    display: block;
+    float: left;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 2.5vw;
+    font-weight: 700;
+    min-height: 200px;
+}
+
